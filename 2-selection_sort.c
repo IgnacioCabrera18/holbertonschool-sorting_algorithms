@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * selection_sort - sort an array of int 
+ * selection_sort - sort an array of int
  * @array: pointer to array
  * @size: size of the array
  */
@@ -29,6 +29,7 @@ void selection_sort(int *array, size_t size)
 			temp = array[min];
 			array[min] = array[i];
 			array[i] = temp;
+			print_array(array, size);
 		}
 	}
 }
